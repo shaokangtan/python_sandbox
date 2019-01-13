@@ -1,5 +1,4 @@
-ikl;fhasflsa
-mport sys
+import sys
 def test():
     print("hello")
 
