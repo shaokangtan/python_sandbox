@@ -34,8 +34,10 @@ array1 = [1,1,2,3,3,4,5]
 array2 = [5,4,3,2,1]
 import random
 
+print(validate_peak_valley(array))
 
 peak_valley(array)
+print(array)
 print(validate_peak_valley(array))
 peak_valley(array1)
 print(validate_peak_valley(array1))

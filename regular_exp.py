@@ -1,4 +1,21 @@
 import re
+test = '0:00:50 1d 0:02:13 0fd0'
+pattern = '(\\d+:\\d+:\\d+).*(\\d+:\\d+:\\d+).*'
+#pattern = '(\\d+:\\d+:\\d+).*(\\d+:\\d+:\\d+)'
+counter_match = re.search(pattern, test)
+print (counter_match)
+if counter_match is not None:
+    print(counter_match.group(1))
+    print(counter_match.group(2))
+exit()
+
+counter_pattern = '(\\d{1,2}):(\\d{1,2}):(\\d{1,2})'
+player_time = '0:2:1200'
+counter_match = re.search(counter_pattern, player_time)
+print (counter_match)
+
+exit()
+
 def check_valid_email(email):
     #ptrn = re.compile("^[a-zA-Z][\w-]*@[a-zA-Z0-9]+\.[a-zA-Z]{1,3}$")
     ptrn = re.compile("[a-zA-Z][\w-]*@[a-zA-Z0-9]+\.[a-zA-Z]{1,3}")

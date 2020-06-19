@@ -12,9 +12,9 @@ example input:
 5 6
 '''
 
-array_1 = numpy.array([[1,2,3],[0,0,0],[4,5,6])
-array_2 = numpy.array([[0,0,0],[7,8,9],[10,11,12])
-array_3 = numpy.array([[13,0,0],[14,8,9],[1,11,12])
+array_1 = numpy.array([[1,2,3],[0,0,0],[4,5,6]])
+array_2 = numpy.array([[0,0,0],[7,8,9],[10,11,12]])
+array_3 = numpy.array([[13,0,0],[14,8,9],[1,11,12]])
 
 print (numpy.concatenate((array_1, array_2, array_3), axis = 0))
 print (numpy.concatenate((array_1, array_2, array_3), axis = 1))

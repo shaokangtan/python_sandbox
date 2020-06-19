@@ -18,5 +18,6 @@ print ("struct")
 import struct
 print (struct.pack('@h', 1))
 print (struct.pack('<h', 1))
+print (struct.pack('>h', 1))
 little_endian = (struct.pack('@h', 1) == struct.pack('<h', 1))
 print (little_endian)
